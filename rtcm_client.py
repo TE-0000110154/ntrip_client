@@ -1,24 +1,36 @@
 import socket
 import base64
 
-SERVER_HOST = 'geortk.jp'
-SERVER_PORT = 2101
-#MOUNT_POINT = 'lm_siddique0'
-MOUNT_POINT = 'kfarm'
-#OUNT_POINT = 'kaname'
-
+#
+# PoC3
+#
 #SERVER_HOST = 'rtk2go.com'
-#SERVER_PORT = 2104
-#MOUNT_POINT = 'AKASAKI-JF'
-#MOUNT_POINT = "Sonnano_Naiyo"
+#SERVER_PORT = 2101
+#MOUNT_POINT = "SBF1"
+#MOUNT_POINT = "vhlcrtk"
+#MOUNT_POINT = "EdgewoodFarmsLLC"
+#MOUNT_POINT = "Windsormo"
+#MOUNT_POINT = "JasonWiebeDairy"
+#MOUNT_POINT = "clfllc"
+#MOUNT_POINT = "OverlandRTK"
+
+#
+# JP
+#
+#SERVER_HOST = 'ntrip1.bizstation.jp'
+#SERVER_PORT = 2101
+#MOUNT_POINT = 'B4A00B46'
 
 #SERVER_HOST = 'rtk2go.com'
 #SERVER_PORT = 2104
 #MOUNT_POINT = "KOIL_FACTORY_PRO"
+#MOUNT_POINT = 'InoharaKobo'
 
-#SERVER_HOST = 'rtk2go.com'
+#SERVER_HOST = 'geortk.jp'
 #SERVER_PORT = 2101
-#MOUNT_POINT = 'ACACU'
+#MOUNT_POINT = 'lm_siddique0'
+#MOUNT_POINT = 'kfarm'
+#MOUNT_POINT = 'kaname'
 
 AGENT_NAME  = 'test agent/0.1'
 USER_EMAIL  = base64.b64encode("Tomonobu.Saito@sony.com:password".encode('utf-8')).decode('utf-8')
@@ -26,7 +38,7 @@ USER_EMAIL  = base64.b64encode("Tomonobu.Saito@sony.com:password".encode('utf-8'
 BUFFER_SIZE = 1024
 
 # protocol
-rev = 2      # 1 or 2
+rev = 1      # 1 or 2
 auth = True # Trune or False
 
 try:
